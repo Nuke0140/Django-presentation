@@ -1,0 +1,160 @@
+{%extends 'base.html'%}
+
+{%block title%}Overview{%endblock title%}
+
+
+{% block body%}
+
+<main id="content" role="main">
+    <!-- Hero -->
+    <div class="bg-dark" style="background-image: url(static/NUke.jpg);">
+      <div class="container content-space-2 content-space-lg-3">
+        <div class="w-lg-65 text-center mx-lg-auto">
+          <span class="badge bg-warning text-dark rounded-pill mb-3">Overview</span>
+          <h1 class="text-white mb-3"></h1>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Content -->
+    <div class="container content-space-2 content-space-lg-0">
+      <div class="row">
+        <div class="col-lg-4 mt-lg-n10 mb-7 mb-lg-0">
+          <!-- Sticky Block -->
+          <div id="stickyBlockStartPoint" style="">
+            <div class="js-sticky-block hs-kill-sticky" data-hs-sticky-block-options="{
+                   &quot;parentSelector&quot;: &quot;#stickyBlockStartPoint&quot;,
+                   &quot;targetSelector&quot;: &quot;#header&quot;,
+                   &quot;breakpoint&quot;: &quot;lg&quot;,
+                   &quot;startPoint&quot;: &quot;#stickyBlockStartPoint&quot;,
+                   &quot;endPoint&quot;: &quot;#stickyBlockEndPoint&quot;,
+                   &quot;stickyOffsetTop&quot;: 20
+                 }" style="">
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header border-bottom text-center">
+                  <img class="avatar avatar-xxl avatar-4x3" src="static/razer_green_background-wallpaper-1920x1080.jpg" height="20px" width="30px" alt="DjangoInfo">
+                </div>
+
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-sm-4">Overview</dt>
+                    
+                  </dl>
+                  <!-- End Row -->
+
+              
+
+                  <dl class="row">
+                    <dt class="col-sm-4">#</dt>
+                    <dd class="col-sm-8">As you already know, Django is a Python web framework. And like most modern framework, Django supports the MVC pattern. First let's see what is the Model-View-Controller (MVC) pattern, and then we will look at Django’s specificity for the Model-View-Template (MVT) pattern.</dd>
+                  </dl>
+                  <!-- End Row -->
+
+                  
+
+                  <hr class="my-4">
+
+                  <div class="mb-3">
+                    <h4>Products used</h4>
+                  </div>
+
+                  <dl class="row">
+                    <dt class="col-sm-4 mb-2 mb-sm-0">
+                      <div class="svg-icon text-primary">
+                        
+
+                      </div>
+                    </dt>
+                    <!-- End Col -->
+
+                    <dd class="col-sm-8">
+                      <h5 class="mb-0">MVT</h5>
+                      <p class="mb-0">Model View Template</p>
+                    </dd>
+                    <!-- End Col -->
+                  </dl>
+                  <!-- End Row -->
+
+                  <dl class="row">
+                    <dt class="col-sm-4 mb-2 mb-sm-0">
+                      <div class="svg-icon text-primary">
+                      
+
+                      </div>
+                    </dt>
+                    <!-- End Col -->
+
+                    <dd class="col-sm-8">
+                      <h5 class="mb-0">MVC</h5>
+                      <p class="mb-0">Model View Control</p>
+                    </dd>
+                    <!-- End Col -->
+                  </dl>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+          <!-- Sticky Block -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-8 content-space-t-lg-2">
+          <div class="ps-lg-4">
+            <h2 class="h3">Django MVT</h2>
+            <p>The MVT (Model View Template) is a software design pattern. It is a collection of three important components Model View and Template. The Model helps to handle database. It is a data access layer which handles the data.
+
+              The Template is a presentation layer which handles User Interface part completely. The View is used to execute the business logic and interact with a model to carry data and renders a template.
+              
+              Although Django follows MVC pattern but maintains it?s own conventions. So, control is handled by the framework itself.
+              
+              There is no separate controller and complete application is based on Model View and Template. That?s why it is called MVT application.
+              
+              See the following graph that shows the MVT based control flow.
+              
+              .</p>
+
+            <div class="my-4">
+              <img class="img-fluid rounded-2" src="static/django-mvt-based-control-flow.png" alt="Image Description">
+            </div>
+
+            <p>Here, a user requests for a resource to the Django, Django works as a controller and check to the available resource in URL.
+
+              If URL maps, a view is called that interact with model and template, it renders a template.
+              
+              Django responds back to the user and sends a template as a response."</p>
+
+            <div class="my-4">
+              <img class="img-fluid rounded-2" src="static/MVC-Design-Pattern.png" alt="Image Description">
+            </div>
+
+            <p>The Model View Controller (MVC) design pattern specifies that an application consist of a data model, presentation information, and control information. The pattern requires that each of these be separated into different objects.
+
+              MVC is more of an architectural pattern, but not for complete application. MVC mostly relates to the UI / interaction layer of an application. You’re still going to need business logic layer, maybe some service layer and data access layer.</p>
+
+            <!-- End Sticky End Point -->
+            <div id="stickyBlockEndPoint"></div>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Testimonials -->
+    <div class="container content-space-b-2 content-space-lg-3">
+      <div class="text-center">
+        <img class="mb-5" src="static/razer_green_background-wallpaper-1920x1080.jpg" alt="Illustration" style="width: 12.5rem;">
+      </div>
+      
+      <!-- Blockquote -->
+      <figure class="w-md-75 text-center mx-md-auto">
+        <blockquote class="blockquote">“DjangoInfo”</blockquote>
+
+        
+  </main>
+{% endblock body%}

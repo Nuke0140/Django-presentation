@@ -1,0 +1,120 @@
+
+{%extends 'base.html'%}
+
+{%block title%}Index{%endblock title%}
+
+
+{% block body%}
+<main>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/only_for_the_cats-wallpaper-1920x1080.jpg" height="600px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DjangoInfo</h5>
+          <p> From ISBM College of Engineering</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+         <img src="static/work_in_progress-wallpaper-1920x1080.jpg" height="600px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DjangoInfo</h5>
+          <p> From ISBM College of Engineering</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/work_3-wallpaper-1920x1080.jpg" height="600px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DjangoInfo</h5>
+          <p> From ISBM College of Engineering.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing px-6 py-3">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="static/nukepic.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+
+        <h2>Django - Basics</h2>
+        <p>Django is a high-level Python web framework that encourages rapid development nclean, pragmatic design. Django makes it easier to build better web apps quickly.
+
+        </p>
+        <p><a class="btn btn-secondary" href="/dbasics">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="static/nukepic.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+
+
+        <h2>Django - Overview</h2>
+        <p> First let's see what is the Model-View-Controller (MVC) pattern, and then we will look at Django’s specificity for the Model-View-Template (MVT) pattern.
+        </p>
+        <p><a class="btn btn-secondary" href="/overview">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="static/nukepic.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+
+
+        <h2>Django - Environment</h2>
+        <p>Django development environment consists of installing and setting up Python, Django, and a Database System. Since Django deals with web application.
+         </p>
+        <p><a class="btn btn-secondary" href="/Environment">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">I'm Nilesh Shinde<span class="text-muted">    From ISBM College of Engineering</span></h2>
+        <p class="lead">I'm here to presenting my presentation about Django<br>
+        hope you can enjoy and understand django properly after this presentation </p>
+      </div>
+      <div class="col-md-5">
+        <img src="static/NUke.jpg"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <footer class="blog-footer">
+    <p> This Blog built for <a href="https://getbootstrap.com/">DjangoInfo</a> by <a href="https://twitter.com/mdo">Nuke</a>.</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+{% endblock body%}
